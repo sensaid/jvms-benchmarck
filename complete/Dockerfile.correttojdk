@@ -1,4 +1,4 @@
-FROM oracle/graalvm-ce:19.3.0
+FROM amazoncorretto:8
 VOLUME /tmp
 ARG JAR_FILE
 COPY ${JAR_FILE} app.jar

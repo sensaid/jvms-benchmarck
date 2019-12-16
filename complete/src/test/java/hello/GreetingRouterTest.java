@@ -24,11 +24,11 @@ public class GreetingRouterTest {
 	public void testHello() {
 		webTestClient
 			// Create a GET request to test an endpoint
-			.get().uri("/hello")
+			.get().uri("/apirest")
 			.accept(MediaType.TEXT_PLAIN)
 			.exchange()
 			// and use the dedicated DSL to test assertions against the response
 			.expectStatus().isOk()
-			.expectBody(String.class).isEqualTo("Hello, Spring!");
+			.expectBody(String.class).isEqualTo("vehicle information utility!");
 	}
 }

@@ -11,7 +11,7 @@ public class Application {
 
 	@Bean
 	MeterRegistryCustomizer<MeterRegistry> metricsCommonTags() {
-  		return registry -> registry.config().commonTags("application", "MYAPP");
+  		return registry -> registry.config().commonTags("application", "vehicle-information-utility");
 	}
 
 	public static void main(String[] args) {
@@ -19,5 +19,8 @@ public class Application {
 
 		GreetingWebClient gwc = new GreetingWebClient();
 		System.out.println(gwc.getResult());
+
+
+
 	}
 }
